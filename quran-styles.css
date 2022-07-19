@@ -95,6 +95,11 @@ body a {
 .modal-body a:hover {
 	text-decoration: underline;
 }
+
+/* .modal {
+	position: absolute;
+	z-index: 2000;
+} */
 /* JUZ PAGE END */
 
 /* SURAH PAGE START */
