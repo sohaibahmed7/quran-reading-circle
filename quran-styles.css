@@ -56,15 +56,15 @@ body a {
 	padding-left: 7.5px;
 }
 
+.row>*{
+	padding: 0 5px;
+}
+
 .title-border {
 	width: 75%;
 	margin: 0 auto;
 	padding: 10px 0;
 	border-bottom: 4px solid #343a40;
-}
-
-.row>* {
-	padding: 0 5px;
 }
 
 /* JUZ PAGE START*/
@@ -100,10 +100,6 @@ body a {
 	text-decoration: underline;
 }
 
-/* .modal {
-	position: absolute;
-	z-index: 2000;
-} */
 /* JUZ PAGE END */
 
 /* SURAH PAGE START */
@@ -120,7 +116,6 @@ body a {
 }
 /* SURAH PAGE END */
 
-/* MEDIA QUERIES */
 @media only screen and (max-device-width: 480px) {
    .juz {
 		margin: 0;
@@ -141,6 +136,7 @@ body a {
 	}	
 }
 
+/* MEDIA QUERIES */
 @media only screen and (min-device-width: 481px) and (max-width: 576px) {
 	html {
 	  scroll-padding-top: 13rem;
