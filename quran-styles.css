@@ -63,6 +63,10 @@ body a {
 	border-bottom: 4px solid #343a40;
 }
 
+.row>* {
+	padding: 0 5px;
+}
+
 /* JUZ PAGE START*/
 .juz {
 		margin: 0;
@@ -116,6 +120,7 @@ body a {
 }
 /* SURAH PAGE END */
 
+/* MEDIA QUERIES */
 @media only screen and (max-device-width: 480px) {
    .juz {
 		margin: 0;
@@ -136,7 +141,6 @@ body a {
 	}	
 }
 
-/* MEDIA QUERIES */
 @media only screen and (min-device-width: 481px) and (max-width: 576px) {
 	html {
 	  scroll-padding-top: 13rem;
