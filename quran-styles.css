@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7.5rem;
+}
+
+body{
+	background: #62A8AC;
+	font-family: Didot;
+	padding-top: 70px;
+}
+
+body a {
+	text-decoration: none;
+	color: #f8f9fa;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* NAVBAR START */
+.navbar-brand {
+	font-size: 1.5rem;
+}
+
+.nav-link {
+	font-size: 1.3rem;
+}
+
+.nav-item .btn {
+	font-size: 1.3rem;
+}
+
+.dropdown-item {
+	font-size: 1.15rem;
+}
+/* NAVBAR END */
+
+.btn-text {
+	font-size: 1.65rem;
+}
+
+#juz-select .btn {
+    font-family: Calibri;
+    font-size: 1.5rem;
+}
+
+.left {
+	float: left;
+	padding-left: 7.5px;
+}
+
+.title-border {
+	width: 75%;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-bottom: 4px solid #343a40;
+}
+
+/* JUZ PAGE START*/
+.juz {
+		margin: 0;
+	}
+
+.carousel {
+  width:585px;
+  height:866px;
+  margin: auto;
+}
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.modal-dialog {
+	max-width: 55%;
+	min-width: 355px;
+	font-family: Calibri;
+}
+
+.modal-body a {
+	color: #00C851;
+}
+
+.modal-body a:hover {
+	text-decoration: underline;
+}
+/* JUZ PAGE END */
+
+/* SURAH PAGE START */
+.surah-link:hover, .surah-link:focus, .surah-link:active {
+	color: inherit;
+}
+
+#surah-section .card {
+	font-family: Calibri;
+}
+
+#surah-section {
+	padding-bottom: 10px;
+}
+/* SURAH PAGE END */
+
+@media only screen and (max-device-width: 480px) {
+   .juz {
+		margin: 0;
+	  position: absolute;
+	  top: 52%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.carousel {
+	  width:370px;
+	  height:548px;
+	}
+	#juz-select .btn {
+    font-size: 1rem;
+	}
+	.modal-dialog {
+		margin: auto;
+	}	
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-device-width: 481px) and (max-width: 576px) {
+	html {
+	  scroll-padding-top: 13rem;
+	}
+	.carousel {
+	  width:370px;
+	  height:548px;
+	}
+	#juz-select .btn {
+    font-size: 1rem;
+	}
+	.modal-dialog {
+		margin: auto;
+	}	
+}
+
+@media only screen and (min-device-width: 577px) and (max-device-width: 992px) {
+   .juz {
+		margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.carousel {
+	  width:700px;
+	  height:1036px;
+	}
+	.modal-dialog {
+		margin: auto;
+	}	
+}
+/* MEDIA QUERIES END */

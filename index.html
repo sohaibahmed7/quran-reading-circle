@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="quran-styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1b9f653427.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Quran Reading Circle - Home</title>
+    <!-- IDEAS
+	Tasbeeh
+	Zakat Calculator
+	Prayer Times (with islamic finder) 
+	-->
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark py-3">
+      <!-- CONTAINER TO ADD PADDING TO THE NAVBAR -->
+      <div class="container">
+        <!-- LOGO WITH LINK -->
+        <a href="#top" class="navbar-brand"
+          >QRC <i class="fa-solid fa-star-and-crescent"></i
+        ></a>
+        <!-- NAVBAR MENU FOR WHEN SCREEN SIZE IS SMALL -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- ACTUAL NAVBAR -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item pe-4">
+              <a href="#juz-select" class="nav-link">Read</a>
+            </li>
+            <li class="nav-item pe-4">
+              <a href="#surah-section" class="nav-link">Surahs</a>
+            </li>
+            <li class="nav-item pe-4">
+              <a
+                href="https://www.youtube.com/channel/UCDp-6IjyN7nbZhpAgjzIhLQ"
+                target="_blank"
+                class="nav-link"
+                >QRC YouTube</a
+              >
+            </li>
+            <!-- 
+					<li class="nav-item dropdown">
+						<a href="" class="nav-link droptown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							More
+						</a>
+						<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+							<li><a class="dropdown-item" href="apps-folder/tasbeeh.html">Tasbeeh</a></li>
+							<li><a class="dropdown-item" href="apps-folder/zakat-calc.html">Zakat Calculator</a></li>
+						</ul>
+					</li>
+			-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Title Banner -->
+    <section
+      class="text-light px-3 py-4 text-center text-md-start"
+      id="title-banner"
+    >
+      <div class="container">
+        <div class="d-md-flex align-items-center justify-content-between">
+          <div>
+            <h1 class="display-2">Quran Reading Circle</h1>
+            <h1>اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ</h1>
+            <h4>"Read in the name of your lord the creator" (Quran 96:1)</h4>
+            <a href="#juz-select"
+              ><button class="btn btn-dark btn-lg mt-2">
+                <span class="btn-text">Start Reading</span>
+              </button></a
+            >
+          </div>
+          <!-- <a href="https://iconscout.com/illustrations/islamic-mosque" target="_blank">Islamic mosque Illustration</a> by <a href="https://iconscout.com/contributors/Aleshaku" target="_blank">Ilusiku Studio</a> -->
+          <img
+            class="img-fluid rounded mc-auto w-50 d-none d-md-block"
+            src="images/islamic-mosque.svg"
+            alt="na"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom border of title screen -->
+    <div class="title-border"></div>
+
+    <!-- Select Juz Section -->
+    <section class="text-light pd-5 my-4" id="juz-select">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-4 pb-2">Select a Juz and begin reading</h1>
+        </div>
+        <div class="row">
+          <div class="d-grid col-4 gap-2 mx-auto">
+            <button
+              onclick="location.href='juz-folder/alif-laam-meem.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">1</span>آلم (Alif Laam Meem)
+            </button>
+            <button
+              onclick="location.href='juz-folder/lan-tana-loo.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">4</span>لن تنالوا (Lan Tana Loo)
+            </button>
+            <button
+              onclick="location.href='juz-folder/wa-iza-samiu.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">7</span>وإذا سمعوا (Wa Iza Samiu)
+            </button>
+            <button
+              onclick="location.href='juz-folder/wa-alamu.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">10</span>واعلموا (Wa A'lamu)
+            </button>
+            <button
+              onclick="location.href='juz-folder/wa-ma-ubarioo.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">13</span>وما أبرئ (Wa Ma Ubarioo)
+            </button>
+            <button
+              onclick="location.href='juz-folder/qaala-alam.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">16</span>قال ألم (Qaala Alam)
+            </button>
+            <button
+              onclick="location.href='juz-folder/wa-qalallazina.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">19</span>وقال الذين (Wa Qalallazina)
+            </button>
+            <button
+              onclick="location.href='juz-folder/wa-mayaqnut.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">22</span>ومن يقنت (Wa Mayaqnut)
+            </button>
+            <button
+              onclick="location.href='juz-folder/ilai-hi-yuraddu.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">25</span>إليه يرد (Ilaihi Yuraddu)
+            </button>
+            <button
+              onclick="location.href='juz-folder/qadd-sami-allah.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">28</span>قد سمع اللہ (Qadd Sami Allah)
+            </button>
+          </div>
+          <div class="d-grid col-4 gap-2 mx-auto">
+            <button
+              onclick="location.href='juz-folder/sayaqool.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">2</span>سيقول السفهاء (Sayaqool)
+            </button>
+            <button
+              onclick="location.href='juz-folder/wal-mohsanat.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">5</span> والمحصنات (Wal Mohsanat)
+            </button>
+            <button
+              onclick="location.href='juz-folder/wa-lau-annana.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">8</span>ولو أننا (Wa Lau Annana)
+            </button>
+            <button
+              onclick="location.href='juz-folder/yatazeroon.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">11</span>يعتذرون (Ya'tazeroon)
+            </button>
+            <button
+              onclick="location.href='juz-folder/ruba-ma.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">14</span>ربما (Ruba Maa)
+            </button>
+            <button
+              onclick="location.href='juz-folder/iqtaraba.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">17</span>اقترب للناس (Iqtaraba)
+            </button>
+            <button
+              onclick="location.href='juz-folder/amman-khalaq.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">20</span>امن خلق (Amman Khalaq)
+            </button>
+            <button
+              onclick="location.href='juz-folder/wa-malia.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">23</span>ومالی (Wa Malia)
+            </button>
+            <button
+              onclick="location.href='juz-folder/haa-meem.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">26</span>حـم (Haa Meem)
+            </button>
+            <button
+              onclick="location.href='juz-folder/tabarakallazi.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">29</span>تبٰرک الذی (Tabarakallazi)
+            </button>
+          </div>
+          <div class="d-grid col-4 gap-2 mx-auto">
+            <button
+              onclick="location.href='juz-folder/tilkal-rusul.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">3</span>تلك الرسل (Tilkal Rusul)
+            </button>
+            <button
+              onclick="location.href='juz-folder/la-yuhibbullah.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">6</span>لا يحب الله (La Yuhibbullah)
+            </button>
+            <button
+              onclick="location.href='juz-folder/qalal-mala.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">9</span>قال الملأ (Qalal Mala)
+            </button>
+            <button
+              onclick="location.href='juz-folder/wa-mamin-daabat.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">12</span>ومامن دابة (Wa Mamin Da-abat)
+            </button>
+            <button
+              onclick="location.href='juz-folder/subhanallazi.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">15</span>سبحٰن الذیٓ (Subhanallazi)
+            </button>
+            <button
+              onclick="location.href='juz-folder/qadd-aflaha.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">18</span>قد أفلح (Qadd Aflaha)
+            </button>
+            <button
+              onclick="location.href='juz-folder/otlu-ma-oohiya.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">21</span>اتل مآ اوحی (Otlu Ma Oohiya)
+            </button>
+            <button
+              onclick="location.href='juz-folder/faman-azlam.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">24</span>فمن أظلم (Faman Azlamu)
+            </button>
+            <button
+              onclick="location.href='juz-folder/qaala-fama.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">27</span>قال فما (Qaala Fama)
+            </button>
+            <button
+              onclick="location.href='juz-folder/amma.html'"
+              class="btn btn-dark p-2"
+              type="button"
+            >
+              <span class="left">30</span>عمّ (Am-ma)
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom border of Juz select screen -->
+    <div class="title-border"></div>
+
+    <!-- Featured Surahs Section -->
+    <section class="text-light pd-5 my-4" id="surah-section">
+      <div class="container">
+        <div class="row">
+          <h1 class="display-4 pb-2 text-center text-md-start">
+            Some significant Surahs
+          </h1>
+          <h4 class="text-center text-md-start" style="line-height: 30px">
+            There are certain surahs which show great significances and should
+            be recited often. The importance of some of these surahs have been
+            mentioned in the Hadith of the prophet Muhammad (صَلَّى اللّٰهُ
+            عَلَيْهِ وَسَلَّمَ) as well. Learn a little about these surahs and
+            read them directly below.
+          </h4>
+        </div>
+        <div class="row mx-auto">
+          <div class="col-12 col-lg-4 gap-2 mx-auto my-2">
+            <a href="surah-folder/surah-waqiah.html" class="surah-link">
+              <div class="card bg-dark">
+                <div class="card-body">
+                  <h4 class="card-title">Al-Waqi'ah</h4>
+                  <h5 class="card-subtitle mb-2 text-muted">The Inevitable</h5>
+                  <p class="card-text">
+                    Abdullah Ibn Mas'ud (رَضِيَ ٱللَّٰهُ عَنْهُ) narrates that:
+                    "Surah Waqi'ah will become a protection from poverty for the
+                    one who recites it every right." (Mukhtasar Ithafus sadatil
+                    Maharah, Hadith: 6556; Takhrijul Kash-shaf, vol.3 pg.412;
+                    Lisanul MIzan, no: 8902)
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-lg-4 gap-2 mx-auto my-2">
+            <a href="surah-folder/surah-yaseen.html" class="surah-link">
+              <div class="card bg-dark">
+                <div class="card-body">
+                  <h4 class="card-title">Yaseen</h4>
+                  <h5 class="card-subtitle mb-2 text-muted">Yaseen</h5>
+                  <p class="card-text">
+                    Ibn 'Abbas (رَضِيَ ٱللَّٰهُ عَنْهُ) narrates that: “Whoever
+                    recites Yaseen in the morning, his work for that entire day
+                    will be made easy and whoever recites it at the end of the
+                    day, his tasks till the next morning will be made easy
+                    (Sunan Darimi)
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-lg-4 gap-2 mx-auto my-2">
+            <a href="surah-folder/surah-mulk.html" class="surah-link">
+              <div class="card bg-dark">
+                <div class="card-body">
+                  <h4 class="card-title">Al-Mulk</h4>
+                  <h5 class="card-subtitle mb-2 text-muted">The Sovereignty</h5>
+                  <p class="card-text">
+                    Abu Huraira (رَضِيَ ٱللَّٰهُ عَنْهُ) narrates that:
+                    "...[Surah Mulk] intercedes for a man on the day of judgment
+                    so that he is taken out of the fire and entered into
+                    paradise (Abu Dawud 1400)." It is recommended for this surah
+                    to be recited every night.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row mx-auto">
+          <div class="col-12 col-lg-4 gap-2 mx-auto my-2">
+            <a href="surah-folder/surah-buruj.html" class="surah-link">
+              <div class="card bg-dark">
+                <div class="card-body">
+                  <h4 class="card-title">Al-Buruj</h4>
+                  <h5 class="card-subtitle mb-2 text-muted">
+                    The Mansions of Stars
+                  </h5>
+                  <p class="card-text">
+                    One of the themes of Surah Buruj is to motivate the
+                    believers and affirm to them that: "If you remain firm and
+                    steadfast against tyranny and coercion, you will be rewarded
+                    richly for it [by Allah]..."
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-lg-4 gap-2 mx-auto my-2">
+            <a href="surah-folder/surah-kahf.html" class="surah-link">
+              <div class="card bg-dark">
+                <div class="card-body">
+                  <h4 class="card-title">Al-Kahf</h4>
+                  <h5 class="card-subtitle mb-2 text-muted">The Cave</h5>
+                  <p class="card-text">
+                    Abu Saeed al-Khurdi (رَضِيَ ٱللَّٰهُ عَنْهُ) narrates that:
+                    "Whoever reads Surah Kahf on Friday will have a light that
+                    will stretch from one Friday to the next." (an-Nasa'i,
+                    al-Baihaqi, and al-Hakim)
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-lg-4 gap-2 mx-auto my-2">
+            <a href="surah-folder/surah-sajdah.html" class="surah-link">
+              <div class="card bg-dark">
+                <div class="card-body">
+                  <h4 class="card-title">As-Sajdah</h4>
+                  <h5 class="card-subtitle mb-2 text-muted">The Prostration</h5>
+                  <p class="card-text">
+                    The prophet Muhammad (صَلَّى اللّٰهُ عَلَيْهِ وَسَلَّمَ)
+                    used to recite Surah Sajdah in the salah of Fajr on Friday
+                    (Tirmidhi #520). Similar to Surah Mulk, it has also been
+                    advised to recite Surah Sajdah at night.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row mx-auto">
+          <div class="col-12 col-lg-6 gap-2 mx-auto my-2">
+            <a href="surah-folder/surah-jinn.html" class="surah-link">
+              <div class="card bg-dark">
+                <div class="card-body">
+                  <h4 class="card-title">Al-Jinn</h4>
+                  <h5 class="card-subtitle mb-2 text-muted">The Jinn</h5>
+                  <p class="card-text">
+                    In a hadith narrated by Imam Jaffar Sadiq (رَضِيَ ٱللَّٰهُ
+                    عَنْهُ) "If one repeatedly recites Surah Jinn, it protects
+                    [them] from the evils and Jinns." In another, the reciter of
+                    this Surah will be with the Prophet Muhammad (صَلَّى اللّٰهُ
+                    عَلَيْهِ وَسَلَّمَ) on the Day of Judgment (Sunan Ibn Majah)
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
