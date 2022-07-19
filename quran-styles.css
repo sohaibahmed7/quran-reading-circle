@@ -11,7 +11,7 @@ html {
 
 body{
 	background: #62A8AC;
-	font-family: Didot;
+	font-family: Didot, "Playfair Display", Georgia, 'Times New Roman', Times, serif;
 	padding-top: 70px;
 }
 
@@ -47,7 +47,7 @@ body a {
 }
 
 #juz-select .btn {
-    font-family: Calibri;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -89,7 +89,7 @@ body a {
 .modal-dialog {
 	max-width: 55%;
 	min-width: 355px;
-	font-family: Calibri;
+	font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
 .modal-body a {
@@ -108,7 +108,7 @@ body a {
 }
 
 #surah-section .card {
-	font-family: Calibri;
+	font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
 #surah-section {
