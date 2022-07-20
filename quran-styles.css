@@ -11,10 +11,10 @@ html {
 
 body{
 	background: #62A8AC;
-	font-family: Didot, "Playfair Display", Georgia, 'Times New Roman', Times, serif;
+	font-family: Didot, "Playfair Display", 'Times New Roman', Times, serif;
 	padding-top: 70px;
 }
-
+ 
 body a {
 	text-decoration: none;
 	color: #f8f9fa;
