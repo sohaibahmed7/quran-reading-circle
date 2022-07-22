@@ -25,6 +25,10 @@ body a {
 }
 
 /* NAVBAR START */
+.navbar {
+	box-shadow: 0 3px 7px #343a40ee;
+}
+
 .navbar-brand {
 	font-size: 1.5rem;
 }
