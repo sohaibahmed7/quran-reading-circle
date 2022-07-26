@@ -9,6 +9,46 @@ html {
   scroll-padding-top: 7.5rem;
 }
 
+/* CUSTOM FONTS START */
+
+@font-face {
+	font-family: Zuhair-regular-display;
+	src: url(./fonts/ZuhairAlbaziNaskhDisplay-Regular.otf) format("opentype");
+}
+
+.arabic-display {
+	font-family: 'Zuhair-regular-display';
+}
+
+@font-face {
+	font-family: Zuhair-bold-display;
+	src: url(./fonts/ZuhairAlbaziNaskhDisplay-Bold.otf) format("opentype");
+}
+
+.arabic-bold-display {
+	font-family: 'Zuhair-bold-display';
+}
+
+@font-face {
+	font-family: Zuhair-regular-text;
+	src: url(./fonts/ZuhairAlbaziNaskhText-Regular.otf) format("opentype");
+}
+
+.arabic-text {
+	font-family: 'Zuhair-regular-text';
+}
+
+@font-face {
+	font-family: Zuhair-bold-text;
+	src: url(./fonts/ZuhairAlbaziNaskhText-Bold.otf) format("opentype");
+}
+
+.arabic-bold-text {
+	font-family: 'Zuhair-bold-text';
+}
+
+/* CUSTOM FONTS END */
+
 body{
 	background: #F8EBD5;
 	font-family: Didot, "Playfair Display", 'Times New Roman', Times, serif;
