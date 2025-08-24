@@ -19,7 +19,7 @@ const SlidingPanel: React.FC<SlidingPanelProps> = ({
 }) => {
   if (variant === 'desktop') {
     return (
-      <aside className={`absolute top-0 right-0 h-full w-1/2 lg:w-1/3 bg-white dark:bg-gray-800 shadow-lg p-6 overflow-y-auto transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0 z-30' : 'translate-x-full z-20'} hidden md:block`}>
+      <aside className={`absolute top-10 right-0 h-full w-1/2 lg:w-1/3 bg-white dark:bg-gray-800 shadow-lg p-6 overflow-y-auto transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0 z-30' : 'translate-x-full z-20'} hidden md:block`}>
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-2xl font-bold">{title}</h2>
           {onClose && (
