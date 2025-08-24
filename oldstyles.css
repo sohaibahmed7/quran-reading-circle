@@ -1,0 +1,216 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7.5rem;
+}
+
+/* CUSTOM FONTS START */
+
+@font-face {
+	font-family: Zuhair-regular-display;
+	src: url(./fonts/ZuhairAlbaziNaskhDisplay-Regular.otf) format("opentype");
+}
+
+.arabic-display {
+	font-family: 'Zuhair-regular-display';
+}
+
+@font-face {
+	font-family: Zuhair-bold-display;
+	src: url(./fonts/ZuhairAlbaziNaskhDisplay-Bold.otf) format("opentype");
+}
+
+.arabic-bold-display {
+	font-family: 'Zuhair-bold-display';
+}
+
+@font-face {
+	font-family: Zuhair-regular-text;
+	src: url(./fonts/ZuhairAlbaziNaskhText-Regular.otf) format("opentype");
+}
+
+.arabic-text {
+	font-family: 'Zuhair-regular-text';
+}
+
+@font-face {
+	font-family: Zuhair-bold-text;
+	src: url(./fonts/ZuhairAlbaziNaskhText-Bold.otf) format("opentype");
+}
+
+.arabic-bold-text {
+	font-family: 'Zuhair-bold-text';
+}
+
+/* CUSTOM FONTS END */
+
+body{
+	background: #F8EBD5;
+	font-family: Didot, "Playfair Display", 'Times New Roman', Times, serif;
+	padding-top: 70px;
+}
+ 
+body a {
+	text-decoration: none;
+	color: #f8f9fa;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* NAVBAR START */
+.navbar {
+	box-shadow: 0 1px 7px #343a40ee;
+}
+
+.navbar-brand {
+	font-size: 1.5rem;
+}
+
+.nav-link {
+	font-size: 1.3rem;
+}
+
+.nav-item .btn {
+	font-size: 1.3rem;
+}
+
+.dropdown-item {
+	font-size: 1.15rem;
+}
+/* NAVBAR END */
+
+.btn-text {
+	font-size: 1.65rem;
+}
+
+#juz-select .btn {
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+
+.left {
+	float: left;
+	padding-left: 7.5px;
+}
+
+.row>*{
+	padding: 0 5px;
+}
+
+.title-border {
+	width: 75%;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-bottom: 4px solid #343a40;
+}
+
+/* JUZ PAGE START*/
+.juz {
+		margin: 0;
+	}
+
+.carousel {
+  width:585px;
+  height:866px;
+  margin: auto;
+}
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.modal-dialog {
+	max-width: 55%;
+	min-width: 355px;
+	font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.modal-body a {
+	color: #00C851;
+}
+
+.modal-body a:hover {
+	text-decoration: underline;
+}
+
+/* JUZ PAGE END */
+
+/* SURAH PAGE START */
+.surah-link:hover, .surah-link:focus, .surah-link:active {
+	color: inherit;
+}
+
+#surah-section .card {
+	font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+#surah-section {
+	padding-bottom: 10px;
+}
+/* SURAH PAGE END */
+
+@media only screen and (max-device-width: 480px) {
+   .juz {
+		margin: 0;
+	  position: absolute;
+	  top: 52%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.carousel {
+	  width:370px;
+	  height:548px;
+	}
+	#juz-select .btn {
+    font-size: 0.85rem;
+	}
+	.modal-dialog {
+		margin: auto;
+	}	
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-device-width: 481px) and (max-width: 576px) {
+	html {
+	  scroll-padding-top: 13rem;
+	}
+	.carousel {
+	  width:370px;
+	  height:548px;
+	}
+	#juz-select .btn {
+    font-size: 1rem;
+	}
+	.modal-dialog {
+		margin: auto;
+	}	
+}
+
+@media only screen and (min-device-width: 577px) and (max-device-width: 992px) {
+   .juz {
+		margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.carousel {
+	  width:700px;
+	  height:1036px;
+	}
+	.modal-dialog {
+		margin: auto;
+	}	
+}
+/* MEDIA QUERIES END */
