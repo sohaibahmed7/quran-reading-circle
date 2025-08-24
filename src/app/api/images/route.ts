@@ -19,7 +19,7 @@ export async function GET(request: Request) {
 
   // Construct the full URLs for the images
   const imagePaths = juzInfo.images.map(
-    (file: any) => `/images/${juzInfo.folder}/${file}`
+    (file: string) => `/images/${juzInfo.folder}/${file}`
   );
 
   return NextResponse.json({ files: imagePaths });
