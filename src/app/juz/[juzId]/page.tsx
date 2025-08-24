@@ -169,7 +169,7 @@ export default function JuzPage({ params }: JuzPageProps) {
               {imageFiles.map((file, index) => (
                 <div key={file} className="w-full h-full flex-shrink-0 snap-center flex items-center justify-center p-4">
                   <Image
-                    src={`/images/${juzInfo?.folder}/${file}`}
+                    src={file}
                     alt={`Page ${index + 1} from Juz ${juzInfo?.number}`}
                     width={800}
                     height={1100}
