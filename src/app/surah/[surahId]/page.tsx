@@ -178,16 +178,16 @@ export default function SurahPage({ params }: SurahPageProps) {
               ))}
             </div>
           ) : (
-            <div className="w-full max-w-3xl bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 px-4">
+            <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-6 px-4">
               {surahDetails.ayahs.map((ayah: Ayah) => (
-                <div key={ayah.number} className="border-b border-gray-200 dark:border-gray-700 py-6">
+                <div key={ayah.number} className="border-b border-gray-200 py-6">
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-lg font-bold text-green-500">{ayah.numberInSurah}</span>
                   </div>
                   <p className="text-right text-3xl font-zuhair-display leading-relaxed tracking-wide rtl mb-4">
                     {ayah.indopakText}
                   </p>
-                  <p className="text-left text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="text-left text-lg text-gray-700 leading-relaxed">
                     {ayah.text}
                   </p>
                 </div>
@@ -217,7 +217,7 @@ export default function SurahPage({ params }: SurahPageProps) {
         {/* Desktop Translations Panel */}
         <SlidingPanel
           isOpen={showTranslations}
-          title="Ayahs"
+          title="Translation"
           variant="desktop"
           type="translations"
         >
@@ -228,7 +228,7 @@ export default function SurahPage({ params }: SurahPageProps) {
         <SlidingPanel
           isOpen={showTranslations}
           onClose={() => setShowTranslations(false)}
-          title="Ayahs"
+          title="Translation"
           variant="mobile"
           type="translations"
         >

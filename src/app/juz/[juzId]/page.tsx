@@ -199,7 +199,7 @@ export default function JuzPage({ params }: JuzPageProps) {
         {/* Desktop Translations Panel */}
         <SlidingPanel
           isOpen={showTranslations}
-          title="Ayahs"
+          title="Translation"
           variant="desktop"
           type="translations"
         >
@@ -210,7 +210,7 @@ export default function JuzPage({ params }: JuzPageProps) {
         <SlidingPanel
           isOpen={showTranslations}
           onClose={() => setShowTranslations(false)}
-          title="Ayahs"
+          title="Translation"
           variant="mobile"
           type="translations"
         >

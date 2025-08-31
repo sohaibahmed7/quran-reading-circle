@@ -59,7 +59,7 @@ const PanelHeaderButtons: React.FC<PanelHeaderButtonsProps> = ({
         }}
         className="text-sm text-gray-300 hover:text-white transition-colors px-2 py-1"
       >
-        Translation
+        {showTranslations ? 'Hide' : 'Show'} Translation
       </button>
     </div>
   );
