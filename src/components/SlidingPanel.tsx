@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 
 interface SlidingPanelProps {
   isOpen: boolean;
@@ -41,24 +41,8 @@ const SlidingPanel: React.FC<SlidingPanelProps> = ({
     ? `${isOpen ? 'translate-y-0 z-40' : 'translate-y-full z-30'}`
     : `${isOpen ? 'translate-y-0 z-40' : 'translate-y-full z-30'}`;
 
-  const panelRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!isOpen || variant !== 'mobile') return;
-    function handleClick(event: MouseEvent) {
-      if (panelRef.current && !panelRef.current.contains(event.target as Node)) {
-        if (onClose) onClose();
-      }
-    }
-    document.addEventListener('mousedown', handleClick);
-    return () => document.removeEventListener('mousedown', handleClick);
-  }, [isOpen, variant, onClose]);
-
   return (
-    <aside
-      ref={panelRef}
-      className={`absolute bottom-0 left-0 right-0 h-3/4 bg-white shadow-lg p-6 overflow-y-auto transform transition-transform duration-300 ease-in-out ${transformClass} md:hidden`}
-    >
+    <aside className={`absolute bottom-0 left-0 right-0 h-3/4 bg-white shadow-lg p-6 overflow-y-auto transform transition-transform duration-300 ease-in-out ${transformClass} md:hidden`}>
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold">{title}</h2>
         {onClose && (

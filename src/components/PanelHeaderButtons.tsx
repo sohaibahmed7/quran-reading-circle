@@ -44,19 +44,13 @@ const PanelHeaderButtons: React.FC<PanelHeaderButtonsProps> = ({
   return (
     <div className="md:hidden flex items-center space-x-3">
       <button 
-        onClick={() => {
-          if (showTranslations) onToggleTranslations();
-          onToggleTajweed();
-        }} 
+        onClick={onToggleTajweed}
         className="text-sm text-gray-300 hover:text-white transition-colors px-2 py-1"
       >
         Tajweed
       </button>
       <button 
-        onClick={() => {
-          if (showTajweedPanel) onToggleTajweed();
-          onToggleTranslations();
-        }}
+        onClick={onToggleTranslations}
         className="text-sm text-gray-300 hover:text-white transition-colors px-2 py-1"
       >
         {showTranslations ? 'Hide' : 'Show'} Translation
