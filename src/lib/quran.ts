@@ -25,7 +25,7 @@ export async function getAllSurahs(): Promise<Surah[]> {
   try {
     const response = await fetch(`${BASE_URL}/surah`);
     const data = await response.json();
-    return data.data;
+    return data.data ?? [];
   } catch (error) {
     console.error('Error fetching all surahs:', error);
     return [];

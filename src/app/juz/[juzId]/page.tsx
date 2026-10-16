@@ -124,7 +124,7 @@ export default function JuzPage({ params }: JuzPageProps) {
     );
   }
 
-  if (!juzInfo || !juzDetails) {
+  if (!juzInfo) {
     return (
       <div className="text-center py-10">
         <h1 className="text-2xl font-bold">Juz not found</h1>

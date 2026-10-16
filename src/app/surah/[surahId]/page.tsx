@@ -123,7 +123,7 @@ export default function SurahPage({ params }: SurahPageProps) {
     );
   }
 
-  if (!surahInfo || !surahDetails) {
+  if (!surahInfo) {
     return (
       <div className="text-center py-10">
         <h1 className="text-2xl font-bold">Surah not found</h1>
@@ -179,7 +179,7 @@ export default function SurahPage({ params }: SurahPageProps) {
             </div>
           ) : (
             <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-6 px-4">
-              {surahDetails.ayahs.map((ayah: Ayah) => (
+              {surahDetails?.ayahs.map((ayah: Ayah) => (
                 <div key={ayah.number} className="border-b border-gray-200 py-6">
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-lg font-bold text-green-500">{ayah.numberInSurah}</span>
